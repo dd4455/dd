@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator obligacji</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Kalkulator odsetek obligacji</h1>
+  
+  <form id="bond-form">
+    <label for="principal">Kwota obligacji (PLN):</label>
+    <input type="number" id="principal" required>
+
+    <label for="rate">Oprocentowanie (% rocznie):</label>
+    <input type="number" id="rate" step="0.01" required>
+
+    <label for="years">Okres (lata):</label>
+    <input type="number" id="years" required>
+
+    <button type="submit">Oblicz</button>
+  </form>
+  
+  <div id="result">
+    <h2>Wynik:</h2>
+    <p>Odsetki: <span id="interest"></span> PLN</p>
+    <p>Łączna kwota po okresie: <span id="total"></span> PLN</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
